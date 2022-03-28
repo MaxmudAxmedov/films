@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Films</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar p-0 navbar-light bg-light shadow position-fixed w-100">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="navbar-logo" src="./img/video-camera.png" alt="films logo">
+                </a>
+                <form class="d-flex w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <select class="form-select ms-5">
+                        <option value="All">All</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="list-group d-flex justify-content-between flex-row flex-wrap gy-5"></ul>
+        </div>
+    </main>
+
+    <script src="./js/films.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
