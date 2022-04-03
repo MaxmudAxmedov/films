@@ -1,10 +1,9 @@
 body {
-    background-position: center;
-    background-image: url('../img/pattern-img-bg-1.png');
-    background-attachment: fixed;
+    background-color: #4d9b4d;
 }
 nav{
     z-index: 1;
+    background-color: #2f535e;
 }
 .navbar-brand{
     position: relative;
@@ -19,25 +18,26 @@ nav{
     border-radius: 25px;
     border-top-left-radius: 70px;
     border-bottom-left-radius: 70px;
-    animation: video 3s ease infinite;
 }
-@keyframes video {
-    0%{
-        background-image: linear-gradient(to right, rgba(255, 255, 0, 0.1), #F8F9FAff);
-    }
-    50%{
-        background-image: linear-gradient(to right, rgba(255, 255, 0, 0.9), #F8F9FAff);
-    }
-    100%{
-        background-image: linear-gradient(to right, rgba(255, 255, 0,  0.1), #F8F9FAff);
 
-    }
-}
 .navbar-logo{
     width: 80px;
 }
+.sort-btn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.sort-btn:hover{
+    color: rgb(122, 4, 4);
+}
 main{
     transform: translateY(90px);
+}
+.films-list{
+    width: 920px;
 }
 .list-group-item{
     width: 300px;
@@ -49,11 +49,13 @@ main{
     height: 500px;
     box-shadow: 5px 5px 5px #909090;
     transition: all 0.3s ease-in-out;
+    color: #105000;
+    background-color: rgb(156, 156, 153);
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
-.info{
+/* .modal{
     width: 100%;
     height: 340px;
     content: 'referfre';
@@ -64,7 +66,7 @@ main{
     left: 0;
     right: 0;
     margin: 0 auto;
-}
+} */
 .card-img-top{
     width: 100%;
     height: 340px;
@@ -75,9 +77,61 @@ main{
 .card-text{
     word-spacing: 5px;
 }
-time{
+.btn-success{
     display: block;
-    text-align: right;
-    color: rgb(104, 39, 39);
-    text-shadow: 5px 3px 5px #ccc;
+    margin-left: auto;
+}
+
+.select-list{
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: #2f535e;
+    padding-top: 15px;
+}
+.select-list li{
+    width: 280px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+.select-list li .card{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   box-shadow: none;
+
+}
+
+.modals{
+    width: 450px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    margin: 0 auto;
+}
+.modals .card{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    /* display: none; */
+}
+.show{
+    display: block;
+}
+.modals .card .btn{
+    width: 60px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.modals .card .card-text{
+    color: #000;
 }
